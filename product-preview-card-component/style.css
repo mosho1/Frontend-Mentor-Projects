@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  max-width: 1400px;
+}
+.container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 10%;
+}
+.mobile {
+  display: none;
+}
+
+.desktop {
+  width: 300px;
+  height: 400px;
+}
+.text {
+  width: 300px;
+  background-color: #fff;
+  padding-left: 20px;
+}
+h5 {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+h2 {
+  width: 200px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+}
+.description {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-size: 14px;
+  width: 250px;
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+}
+.price {
+  font-size: xx-large;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  /* font-family: "Montserrat"; */
+  font-family: "Fraunces";
+}
+.old-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  position: relative;
+  top: -7px;
+  left: 10px;
+}
+button {
+  width: 250px;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-weight: 500;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile {
+    display: block;
+    width: 340px;
+  }
+  .desktop {
+    display: none;
+  }
+  .text {
+    width: 340px;
+    /* height: 500px; */
+  }
+  h2 {
+    width: 280px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+  }
+  .description {
+    width: 300px;
+    /* border: red solid; */
+  }
+  .pricing {
+    margin-bottom: 10px;
+  }
+  button {
+    width: 290px;
+    margin-bottom: 20px;
+  }
+}
